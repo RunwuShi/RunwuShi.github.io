@@ -338,6 +338,14 @@ section > p {
   line-height: 1.75rem;
 }
 
+.publication-group-title {
+  margin: 0 0 0.75rem;
+  color: var(--subtle);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
 .publication-list li + li {
   margin-top: 0.75rem;
 }
