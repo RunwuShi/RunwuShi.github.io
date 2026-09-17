@@ -246,7 +246,8 @@ button {
   stroke-width: 2;
 }
 
-.profile-links .github-mark {
+.profile-links .github-mark,
+.profile-links .brand-mark {
   fill: currentColor;
   stroke: none;
 }
