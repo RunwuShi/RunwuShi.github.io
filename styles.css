@@ -369,6 +369,19 @@ section > p {
   color: var(--subtle);
 }
 
+.gallery-page {
+  max-width: 44rem;
+  display: block;
+}
+
+.gallery-content {
+  width: 100%;
+}
+
+.gallery-intro {
+  margin-bottom: 1.75rem;
+}
+
 .gallery-list {
   display: grid;
   gap: 2.5rem;
@@ -391,8 +404,8 @@ section > p {
   border-radius: 3px;
 }
 
-.gallery-artwork.portrait-artwork {
-  max-width: 30rem;
+.gallery-item.portrait-item {
+  width: min(100%, 22rem);
   margin: 0 auto;
 }
 
