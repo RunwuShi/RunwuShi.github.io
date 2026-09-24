@@ -9,6 +9,8 @@
   --line-soft: #eeeeef;
   --hover: #f4f4f5;
   --link: #0369a1;
+  --pagination-active-bg: #e0f2fe;
+  --pagination-active-border: #7dd3fc;
   --header-bg: rgb(251 251 250 / 0.95);
 }
 
@@ -23,6 +25,8 @@
   --line-soft: rgb(63 63 70 / 0.55);
   --hover: rgb(63 63 70 / 0.3);
   --link: #7dd3fc;
+  --pagination-active-bg: #164e63;
+  --pagination-active-border: #0e7490;
   --header-bg: rgb(43 43 43 / 0.95);
 }
 
@@ -434,7 +438,7 @@ section > p {
   width: 1.625rem;
   height: 1.625rem;
   border: 1px solid var(--line);
-  border-radius: 3px;
+  border-radius: 5px;
   color: var(--subtle);
   font-size: 0.75rem;
   line-height: 1;
@@ -446,9 +450,10 @@ section > p {
 }
 
 .project-pagination button[aria-current="page"] {
-  border-color: var(--heading);
-  background: var(--heading);
-  color: var(--bg);
+  border-color: var(--pagination-active-border);
+  background: var(--pagination-active-bg);
+  color: var(--link);
+  font-weight: 600;
 }
 
 .links a {
