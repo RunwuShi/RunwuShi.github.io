@@ -415,7 +415,7 @@ section > p {
 }
 
 .project-pagination {
-  margin-top: 0.875rem;
+  margin: -0.375rem 0 0.75rem;
   display: flex;
   justify-content: center;
   gap: 0.25rem;
