@@ -346,13 +346,19 @@ section > p {
   display: grid;
   color: var(--muted);
   font-size: 0.9375rem;
-  line-height: 1.75rem;
+  line-height: 1.625rem;
 }
 
 .project-item + .project-item {
-  margin-top: 1rem;
-  padding-top: 1rem;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
   border-top: 1px solid var(--line-soft);
+}
+
+.project-item.project-page-first {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
 }
 
 .paper-title {
@@ -361,7 +367,7 @@ section > p {
 }
 
 .project-body {
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
   display: grid;
   grid-template-columns: 8rem minmax(0, 1fr);
   align-items: start;
@@ -384,7 +390,7 @@ section > p {
 }
 
 .project-list .links {
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.375rem;
@@ -406,6 +412,34 @@ section > p {
   background: var(--hover);
   color: var(--heading);
   text-decoration: none;
+}
+
+.project-pagination {
+  margin-top: 0.875rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.project-pagination button {
+  width: 1.625rem;
+  height: 1.625rem;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  color: var(--subtle);
+  font-size: 0.75rem;
+  line-height: 1;
+}
+
+.project-pagination button:hover {
+  background: var(--hover);
+  color: var(--heading);
+}
+
+.project-pagination button[aria-current="page"] {
+  border-color: var(--heading);
+  background: var(--heading);
+  color: var(--bg);
 }
 
 .links a {
