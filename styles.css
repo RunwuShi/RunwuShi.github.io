@@ -311,22 +311,24 @@ section > p {
 }
 
 .news-list {
-  display: grid;
-  gap: 0.75rem;
+  margin: 0;
+  padding-left: 1.25rem;
   color: var(--muted);
   font-size: 0.9375rem;
   line-height: 1.75rem;
 }
 
 .news-list li {
-  display: grid;
-  grid-template-columns: 6.25rem minmax(0, 1fr);
-  gap: 1rem;
+  padding-left: 0.125rem;
+}
+
+.news-list li::marker {
+  color: var(--subtle);
 }
 
 .news-list time {
-  color: var(--subtle);
-  font-size: 0.8125rem;
+  color: var(--heading);
+  font-weight: 600;
   white-space: nowrap;
 }
 
@@ -571,8 +573,4 @@ footer {
     padding-right: 0.4rem;
   }
 
-  .news-list li {
-    grid-template-columns: 1fr;
-    gap: 0.125rem;
-  }
 }
