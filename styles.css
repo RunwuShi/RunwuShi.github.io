@@ -417,7 +417,7 @@ section > p {
 .project-heading {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 1.125rem;
   margin-bottom: 1rem;
 }
 
