@@ -350,8 +350,8 @@ section > p {
 }
 
 .project-item + .project-item {
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
   border-top: 1px solid var(--line-soft);
 }
 
