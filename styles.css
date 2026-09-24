@@ -310,6 +310,26 @@ section > p {
   list-style: none;
 }
 
+.news-list {
+  display: grid;
+  gap: 0.75rem;
+  color: var(--muted);
+  font-size: 0.9375rem;
+  line-height: 1.75rem;
+}
+
+.news-list li {
+  display: grid;
+  grid-template-columns: 6.25rem minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.news-list time {
+  color: var(--subtle);
+  font-size: 0.8125rem;
+  white-space: nowrap;
+}
+
 .project-list {
   display: grid;
   gap: 1.25rem;
@@ -489,5 +509,10 @@ footer {
   .language-button {
     padding-left: 0.4rem;
     padding-right: 0.4rem;
+  }
+
+  .news-list li {
+    grid-template-columns: 1fr;
+    gap: 0.125rem;
   }
 }
